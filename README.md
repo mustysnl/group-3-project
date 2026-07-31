@@ -68,17 +68,3 @@ python main.py
   **Compare** to see shared holidays and holidays unique to each country.
 - **Save Result to File:** saves whatever's currently showing (holiday list
   or comparison) as a `.txt` file.
-
----
-
-## Notes for the presentation
-
-- No internet access → holiday lookups will fail with a clear
-  "Connection error" popup rather than crashing.
-- No `GEMINI_API_KEY` set → the app still runs fully; the "meaning" text
-  just falls back to a plain one-line description instead of an AI-written
-  one.
-- `requirements.txt` includes some packages (e.g. `streamlit`, `pandas`)
-  that aren't actually used by this app — they can be trimmed down to just
-  `customtkinter`, `requests`, `python-dotenv`, and `google-generativeai`
-  if you want a leaner install.
